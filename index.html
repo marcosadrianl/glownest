@@ -38,10 +38,10 @@
     <!-- Tailwind CSS v4 Configuration -->
     <style type="text/tailwindcss">
       /* Class based dark mode */
-      @custom-variant dark (&:where(.dark, .dark *));
+      /* Removed unsupported @custom-variant rule */
 
       /* Theme configuration */
-      @theme {
+      :root {
         /* Fonts */
         --default-font-family: "Inter";
       }
@@ -531,7 +531,7 @@
               </div>
               <div class="px-5 pb-5 lg:px-6 lg:pb-6">
                 <a
-                  href="https://barbify.glownest.com"
+                  href="https://barbify.glownest.app"
                   target="_blank"
                   class="flex items-center justify-center gap-2 rounded-sm bg-blue-700 px-6 py-3 leading-6 font-semibold text-white transition hover:border-blue-800 hover:bg-blue-800 hover:text-white focus:ring-3 focus:ring-blue-500/50 focus:outline-hidden active:border-blue-700 active:bg-blue-700"
                 >
