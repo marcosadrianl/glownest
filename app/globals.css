@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap");
+@import "tailwindcss";
+
+:root {
+  --font-display: "DM Serif Display", serif;
+  --font-body: "DM Sans", sans-serif;
+
+  --color-bg: #09090b;
+  --color-bg-2: #111113;
+  --color-bg-card: #141416;
+  --color-border: rgba(255, 255, 255, 0.07);
+  --color-border-hover: rgba(255, 255, 255, 0.14);
+  --color-text: #f4f4f5;
+  --color-muted: #71717a;
+  --color-muted-2: #3f3f46;
+  --color-accent: #a3e635;
+  --color-accent-dim: rgba(163, 230, 53, 0.12);
+  --color-accent-2: #84cc16;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #09090b;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted-2);
+  border-radius: 2px;
+}
